@@ -12,7 +12,7 @@ const ALL_MOVIES = gql`
 function Movies() {
   const { data, loading, error } = useQuery(ALL_MOVIES);
   if (loading) return <h1>loading...</h1>;
-  if (error) return <h1>Colud not fetch :(</h1>;
+  if (error) return <h1>Could not fetch :(</h1>;
 
   return (
     <div>
